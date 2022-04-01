@@ -1,0 +1,18 @@
+edad uno<input type="number" [(ngModel)]="suma.edadUno">
+<br/>
+edad dos<input type="number" [(ngModel)]="suma.edadDOs">
+<br/>
+<button (click)="suma.calcular()">calcular</button>
+<button (click)="suma.limpiar()">limpiar</button>
+
+<br/>
+suma de edades <p>{{suma.edadSumada}}</p>
+<br/>
+promedio de edades <p>{{suma.edadPromedio}}</p>
+<br/>
+<input type="string" [(ngModel)]="user" placeholder="usuario">
+<br/>
+<input type="password" [(ngModel)]="password" placeholder="Password">
+<br/>
+<p>usuario: admin Clave: admin</p>
+<button (click)="login()">Login</button>
